@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=PT+Sans+Narrow:wght@400;700&display=swap');
+:root{
+    --color--one: #2F2F2F;
+    --color--two: #FCFCFC;
+    --color--three: #197BBD;
+
+    --font--one: "Bebas Neue", sans-serif;
+    --font--two: "PT Sans Narrow", sans-serif;
+    --font--three: "Comfortaa", sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: var(--font--one);
+}
+
+h2{
+    font-family: var(--font--three);
+}
+
+p, a{
+    font-family: var(--font--two);
+}
+
+.header {
+    display: flex;
+    padding: 1vh 3vh 1vh 3vh;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color--one);
+    color: #fff;
+}
+
+#sidebarButton{
+    border: 0;
+    width: 100px;
+    height: 2vw;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#sidebarButton:hover{
+    background-color:#a7a7a7;
+}
+
+.div_principal_title{
+    display: none;
+}
+
+#principal_title{
+    font-size: 3em;
+    font-family: var(--font--one);
+}
+
+.div_home_button{
+    width: 100px;
+    text-align: center;
+}
+
+.div_home_button >*{
+    color: var(--color--two);
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+.div_home_button >*:hover{
+    color: var(--color--three);
+}
+
+.main{
+    background-color: rgb(0, 204, 255);
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.main__sidebar{
+    background-color: var(--color--three);
+    width: 0%;
+    height: 90vh;
+    overflow-y: hidden;
+    transition: .2s;
+    color: var(--color--two);
+    
+}
+
+.sidebar__ejercicios{
+    padding: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5vw
+}
+
+.sidebar__ejercicios h2{
+    font-size: 2vw;
+}
+
+.sidebar__ejercicios a{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: var(--color--one);
+    transition: .2s;
+}
+
+.sidebar__ejercicios a:hover{
+    background-color: var(--color--two);
+    color: black;
+}
+
+.main__content{
+    width: 100%;
+    overflow-x: scroll;
+    transition: .2s;
+    word-wrap: break-word;
+    background-color: var(--color--two);
+    padding: 3vw;
+}
+
+.content__index{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.content__index h1{
+    font-size: 5em;
+    font-family: var(--font--one);
+}
+
+.content__index h2{
+    font-size: 3em;
+    margin-bottom: 2vw;
+}
+
+.content__index p{
+    font-size: 1.7em;
+}
+
+.content__index > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.content__code{
+    display: none;
+}
+
+.content__code h2{
+    font-size: 2vw;
+}
+
+.content__title{
+    font-size: 3.5vw;
+}
+
+.content__enunciado, .content__analisis{
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+.content__table{
+    text-align: center;
+    margin: 2vw;
+}
+
+.content__analisis{
+    margin-bottom: 2vw;
+}
+
+pre{
+    text-wrap: wrap;
+}
+
